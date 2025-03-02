@@ -1,6 +1,6 @@
 # sec-aws
 
-An AI-powered security audit and remediation tool for AWS environments. It sscans AWS resources, identifies misconfigurations and security issues, and provides intelligent remedaition steps using RAG.
+An AI-powered security audit and remediation tool for AWS environments. It sscans AWS resources, identifies misconfigurations and security issues, and provides intelligent remediation steps using RAG.
 
 ## Features
 

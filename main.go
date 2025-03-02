@@ -5,10 +5,13 @@ import (
 	"os"
 
 	"github.com/lokeshllkumar/sec-aws/internal/cmd"
+	"github.com/lokeshllkumar/sec-aws/internal/utils"
 	"github.com/spf13/cobra"
 )
 
 func main() {
+	utils.LoadKeysFromEnv()
+
 	rootCmd := &cobra.Command{
 		Use:   "sec-scan-aws",
 		Short: "AI-powered AWS Security Scanner CLI",

@@ -17,7 +17,7 @@ var (
 )
 
 func LoadKeysFromEnv() {
-	err := godotenv.Load("../../.env")
+	err := godotenv.Load()
 	if err != nil {
 		log.Fatalf("Error loading .env file: %v", err)
 	}

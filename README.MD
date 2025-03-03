@@ -57,6 +57,28 @@ PINECONE_API_KEY=<your-pinecone-index-api-key>
 PINECONE_INDEX_HOST=<your-pinecone-index-host>
 ```
 
+- To deploy vulnerable resources (for testing),
+    - Navigate into the ```terraform``` subdirectory containing the Terraform configuration files
+    ```bash
+    cd terraform
+    ```
+
+    - Initalize the Terraform backend, modules and its provider plugins
+    ```bash
+    terraform init
+    ```
+
+    - Preview the plan
+    ```bash
+    terraform plan
+    ```
+
+
+    - Deploy the reosurces
+    ```bash
+    terraform appl -auto-approve
+    ```
+
 - Run the CLI App
 
 ```bash

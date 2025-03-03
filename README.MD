@@ -76,7 +76,7 @@ PINECONE_INDEX_HOST=<your-pinecone-index-host>
 
     - Deploy the reosurces
     ```bash
-    terraform appl -auto-approve
+    terraform apply -auto-approve
     ```
 
 - Run the CLI App

@@ -41,7 +41,8 @@ func CheckIAMSecurity(userName *string) []utils.SecurityIssue {
 		mfaDevices, err := client.ListMFADevices(ctx, &iam.ListMFADevicesInput{
 			UserName: &user,
 		})
-		if err == nil && len(mfaDevices.MFADevices) == 0 {
+		// check the number of devices with MFA enabled
+		if err == nil && len(mfaDevices.MFADevices) != 0 {
 			issues = append(issues, utils.SecurityIssue{
 				Service: "IAM",
 				ResourceName: user,
